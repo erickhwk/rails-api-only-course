@@ -6,9 +6,9 @@ class Contact < ApplicationRecord
   accepts_nested_attributes_for :phones, allow_destroy: true
   accepts_nested_attributes_for :address, update_only: true
 
-  def birthdate_br
-    I18n.l(birthdate) unless birthdate.blank?
-  end
+  # def birthdate_br
+  #   I18n.l(birthdate) unless birthdate.blank?
+  # end
 
   # def author
   #   'Erick Valente'
